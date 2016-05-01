@@ -18,6 +18,8 @@ import {
 import {MdMessage, MdMessages} from "./components/form/messages";
 import {MdInput, MdInputContainer} from "./components/input/input";
 import {MdList, MdListItem} from "./components/list/list";
+import {MdPaging, MdPagingRange, MdPagingControls, MdPagingLengthSelector} from "./components/paging/paging";
+import {PagingService} from "./components/paging/paging_service";
 import {MdProgressLinear} from "./components/progress_linear/progress_linear";
 import {MdProgressCircular} from "./components/progress_circular/progress_circular";
 import {MdPeekaboo} from "./components/peekaboo/peekaboo";
@@ -51,6 +53,9 @@ export * from './components/form/messages';
 export * from './components/input/input';
 
 export * from './components/list/list';
+
+export * from './components/paging/paging';
+export * from './components/paging/paging_service';
 
 export * from './components/progress_linear/progress_linear';
 
@@ -96,6 +101,7 @@ export const MATERIAL_DIRECTIVES: Type[] = CONST_EXPR([
   MdNumberRequiredValidator,
   MdMessage, MdMessages,
   MdList, MdListItem,
+  MdPaging, MdPagingRange, MdPagingControls, MdPagingLengthSelector,
   MdPeekaboo,
   MdProgressLinear,
   MdProgressCircular,
@@ -114,6 +120,7 @@ export const MATERIAL_NODE_PROVIDERS: any[] = CONST_EXPR([
   provide(ViewportHelper, {useClass: NodeViewportHelper}),
   MdDialog,
   Media,
+  PagingService,
   SidenavService,
   MdRadioDispatcher,
   INPUT_VALIDATORS

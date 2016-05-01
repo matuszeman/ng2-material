@@ -1,0 +1,26 @@
+<md-content class="page-container md-padding" layout="row" layout-wrap layout-align="center start">
+  <md-card flex="50" layout="column" *ngFor="#page of displayedPages">
+    <md-card-content>{{ page }}</md-card-content>
+  </md-card>
+
+  <md-paging
+    class="controls"
+    [name]="bookPaging"
+    [lengthSelector]="false"
+    [range]="false"
+    [model]="paging"
+    (onPageChange)="detectChange($event)"></md-paging>
+  <md-paging
+    class="range"
+    [name]="bookPaging"
+    layout="row"
+    (onPageChange)="detectChange($event)">
+    <md-paging-range
+      [model]="paging"
+      [name]="bookPaging"
+      [rangeFormat]="rangeFormat"
+      layout="row"
+      layout-wrap layout-align="center start"></md-paging-range>
+  </md-paging>
+
+</md-content>

@@ -11,6 +11,8 @@ import DataTableSelectableUsage from './components/data_table/selectable_usage';
 import DialogBasicUsage from "./components/dialog/basic_usage";
 import ToolbarBasicUsage from "./components/toolbar/basic_usage";
 import ToolbarScrollShrink from "./components/toolbar/scroll_shrink";
+import PagingBasicUsage from "./components/paging/basic_usage";
+import PagingSplittedUsage from "./components/paging/splitted_usage";
 import ProgressLinearBasicUsage from "./components/progress_linear/basic_usage";
 import ProgressCircularBasicUsage from "./components/progress_circular/basic_usage";
 import RadioBasicUsage from "./components/radio/basic_usage";
@@ -37,6 +39,7 @@ export const DEMO_DIRECTIVES: Type[] = CONST_EXPR([
   InputBasicUsage,
   InputFormBuilder,
   ListBasicUsage,
+  PagingBasicUsage, PagingSplittedUsage,
   RadioBasicUsage,
   SwitchBasicUsage,
   TabsDynamicHeight,
